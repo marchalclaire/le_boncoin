@@ -1,22 +1,85 @@
-.App {
-  text-align: center;
-}
+.header {
+  height: 70px;
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #09d3ac;
+.wrapper {
+  display: flex;
+  flex: row;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-between;
+}
+.nav1 {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 650px;
+}
+.logo {
+  height: 50px;
+}
+.button1 {
+  color: white;
+  border: 1px solid rgb(245, 107, 42);
+  padding: 10px 10px 10px 35px;
+  border-radius: 8px;
+  background-color: rgb(245, 107, 42);
+  position: relative;
+}
+.symbol1 {
+  margin-right: px;
+  position: absolute;
+  left: 7px;
+  top: 8px;
+}
+.button2 {
+  position: relative;
+}
+.symbol2 {
+  margin-right: 10px;
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+.line {
+  background-color: rgb(245, 107, 42);
+  height: 10px;
+}
+.container-offers {
+  background-color: #fafafa;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.container-input {
+  background-color: white;
+  width: 810px;
+  height: 130px;
+  margin-top: 40px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.input-search1 {
+  width: 320px;
+  height: 44px;
+  padding-left: 20px;
+  font-size: 17px;
+}
+.input-search2 {
+  color: white;
+  background-color: #4183d7;
+  width: 220px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
 }
