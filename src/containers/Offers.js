@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import Item from "../components/Item.js";
 
@@ -11,7 +10,6 @@ const Offers = () => {
       "https://leboncoin-api.herokuapp.com/api/offer/with-count?skip=0&limit=25"
     );
     setItems(response.data.offers);
-    console.log(response.data.offers);
   };
   useEffect(() => {
     fetchData();
@@ -31,14 +29,9 @@ const Offers = () => {
       <div className="container-global">
         {items.map((item, index) => {
           // Ici le spread va transmettre tout le contenu de `offers` en tant que props au composant item
-          if (index < 10) {
-            return <Item key={item.id} {...item} />;
-          }
-        })}
-      </div>
 
-      <div>
-        <Link to={"/offer/:id"}>aller à l'annonce</Link>
+          return <Item key={item.id} {...item} />;
+        })}
       </div>
     </>
   );

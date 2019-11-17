@@ -48,6 +48,10 @@
 .blue {
   color: #4183d7;
 }
+.link {
+  text-decoration: inherit;
+  color: inherit;
+}
 
 /* ---------------------HEADER-------------------- */
 .header {

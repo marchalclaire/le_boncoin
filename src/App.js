@@ -12,7 +12,7 @@ const App = () => {
       <Header></Header>
 
       <Switch>
-        <Route path="/offer/:id">
+        <Route path="/offer/:identifiant">
           <Offer />
         </Route>
         <Route path="/">
