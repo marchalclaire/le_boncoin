@@ -30,11 +30,9 @@ const Offer = () => {
                 <div className="description bold">Description</div>
                 <p className="description">
                   Vends blouson de ski fille de couleur rose, en excellent état,
-                  taille 2 ans, de la marque Go Sport.
+                  taille 2 ans, de la marque Go Sport. A venir chercher au Métro
+                  Strasbourg St Denis.
                 </p>
-              </div>
-              <div className="description">
-                A venir chercher au Métro Strasbourg St Denis
               </div>
             </div>
           </div>
@@ -42,8 +40,12 @@ const Offer = () => {
             <div className="container-4 box-shadow">
               <div className="container-4_1">
                 <div className="user bold">AlexD</div>
-                <div className="description bold blue">
-                  17 annonces en ligne
+                <div className="user-info bold blue">17 annonces en ligne</div>
+              </div>
+              <div className="container-4_2">
+                <div className="button3">
+                  <span className="icon-cart"></span>
+                  <span>Acheter</span>
                 </div>
               </div>
             </div>
