@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../logo.svg";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = props => {
   return (
     <>
       <div className="header">
@@ -54,7 +54,27 @@ const Header = () => {
           <div className="nav2">
             <div className="container-text-nav2">
               <span className="icon-user"></span>
-              <span>Se connecter</span>
+              {/* Si user existe (si user déjà logué) tu notes "se déconnecter" et au clic tu délogues (gràce à la fonction logOut du parent App.js). */}
+              {props.user ? (
+                <div
+                  onClick={() => {
+                    props.logOut();
+                  }}
+                >
+                  Se déconnecter
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    // Si user n'existe pas (si user non logué) tu notes "se connecter" et au clic tu log (gràce à la fonction logIn du parent App.js). */}
+                    props.logIn({
+                      name: "Claire"
+                    });
+                  }}
+                >
+                  Se connecter
+                </div>
+              )}
             </div>
           </div>
         </div>
